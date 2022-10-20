@@ -1,0 +1,88 @@
+*{
+ font-family: 'Fredoka', sans-serif;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+/* Utils */
+.align-center{
+  text-align: center;
+}
+
+.pb-5{
+  padding-bottom: 5px;
+}
+/*<----->*/
+
+/* Header */
+header{
+  font-weight: 600;
+  padding: 20px 0px 50px;
+  color: rgb(230,49,111);
+  text-align: center;
+}
+/*<--->*/
+
+/* Main */
+main{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.grid{
+  width: 98%;
+  margin: 40px auto 0px;
+}
+
+.row{
+  margin-bottom: 20px;
+}
+
+.row::after{
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.col{
+  float: left;
+  margin-right: 20px;
+  width: calc((100%/3) - 20px);
+}
+
+.card{
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.50);
+  height: 80px;
+  background-color: rgb(16,14,23);
+}
+
+.name{
+  color: rgb(237, 237, 237);
+  padding-top: 7px;
+  font-weight: 700;
+}
+
+.job,
+.email{
+  font-size: 13px;
+}
+
+.job{
+  color: rgb(225, 225, 225);
+}
+
+.email{
+  color: rgb(76,169,207);
+}
+
+.email::after{
+  content: "@team.com";
+}
+
+img{
+  float: left;
+  height: inherit;
+  margin-right: 10px;
+}
+/*<---->*/
