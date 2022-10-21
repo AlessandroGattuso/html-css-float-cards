@@ -10,10 +10,6 @@
   text-align: center;
 }
 
-.mr-30{
-  margin-right: 30px;
-}
-
 .pb-5{
   padding-bottom: 5px;
 }
@@ -53,10 +49,14 @@ main{
   width: calc((100%/3) - 20px);
 }
 
-.col::after{
+.col::after{          /* clearfix */
   display: table;
   content: "";
   clear: both;
+}
+
+.col:not(.col:last-of-type){  /* don't apply margin-right to the last child of the class col */
+  margin-right: 30px;
 }
 
 .card{
