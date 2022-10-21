@@ -34,7 +34,7 @@ main{
   margin: 40px 0px;
 }
 
-.row{
+.row:not(.row:last-child){  /* don't apply margin-bottom to the last child of the class row */
   margin-bottom: 20px;
 }
 
@@ -55,7 +55,7 @@ main{
   clear: both;
 }
 
-.col:not(.col:last-of-type){  /* don't apply margin-right to the last child of the class col */
+.col:not(.col:last-child){  /* don't apply margin-right to the last child of the class col */
   margin-right: 30px;
 }
 
